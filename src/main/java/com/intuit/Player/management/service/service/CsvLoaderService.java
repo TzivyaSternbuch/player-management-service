@@ -2,17 +2,14 @@ package com.intuit.Player.management.service.service;
 
 
 import com.intuit.Player.management.service.entity.Player;
-import com.intuit.Player.management.service.exception.PlayerNotFoundException;
 import com.intuit.Player.management.service.repository.PlayerRepository;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
