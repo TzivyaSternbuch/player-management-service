@@ -1,5 +1,6 @@
 package com.intuit.Player.management.service.dto;
 
+import com.intuit.Player.management.service.service.PlayerService;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,7 +17,7 @@ public class PlayerRequestParams {
     public PlayerRequestParams() {
         this.page = 0;
         this.size = 10;
-        this.sortProperty="playerID";
+        this.sortProperty= PlayerService.PLAYER_ID;
         this.sortDirection = SortDirection.ASC;
     }
 

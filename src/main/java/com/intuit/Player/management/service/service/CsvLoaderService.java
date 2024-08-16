@@ -24,11 +24,12 @@ import java.util.List;
 public class CsvLoaderService {
 
     private final PlayerRepository playerRepository;
+    private final String CSV_PATH = "src/main/resources/static/player.csv";
 
     @PostConstruct
     public void loadPlayersFromCsv() throws IOException {
         if (playerRepository.count() == 0) { // Ensure data is loaded only once
-            try (Reader reader = new FileReader("C:/task/Player.management.service/src/main/resources/static/player.csv")) {
+            try (Reader reader = new FileReader(CSV_PATH)) {
                 CsvToBean<Player> csvToBean = new CsvToBeanBuilder<Player>(reader)
                         .withType(Player.class)
                         .withIgnoreLeadingWhiteSpace(true)

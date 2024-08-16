@@ -13,6 +13,7 @@ import java.util.List;
 @Service
 public class PlayerService {
     private final PlayerRepository playerRepository;
+    public static final String PLAYER_ID = "playerID";
 
     public Page<Player> getAllPlayers(Pageable pageable) {
         return playerRepository.findAll(pageable);
