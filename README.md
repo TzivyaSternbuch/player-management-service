@@ -43,14 +43,14 @@ The application includes global exception handling for the following scenarios:
 Setup
 Prerequisites
 
-    Java 17 or higher
+    Java 17
     Gradle
 
 Installation
 
     Clone the repository:
 
-    bash
+    
 
 git clone https://github.com/TzivyaSternbuch/player-management-service.git
 
@@ -62,7 +62,6 @@ bash
 
 Run the application:
 
-bash
 
     ./gradlew bootRun
 
@@ -79,7 +78,6 @@ Testing
 
 To run tests, use the following Gradle command:
 
-bash
 
-./gradlew test
+   ./gradlew test
 
